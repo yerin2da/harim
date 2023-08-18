@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* 공통서식 common.css  */
+
+header{
+    background: #4b4b4b;
+    
+}
+/* 장바구니, 전체메뉴 아이콘 숨기기 */
+i.fa-shopping-cart, label.fa-bars, fieldset>label span, #toggle, legend, i.fa-angle-down{
+    display: none;}
+/* 스와이퍼 슬라이드 서식 */
+.swiper-pagination-bullet{
+    width: 100px !important;height: 8px !important;
+    border-radius: none !important;
+}
+.swiper-pagination-bullet-active{
+    background: beige !important;
+}
+/* 메인 공통서식 */
+.free_ex{
+    background: #e32929;
+    padding: 30px 0;
+}
+.free_ex > h2{
+    display: none;
+}
+
+/* 버튼 공통서식 */
+.button{
+    font-size: 16px;
+    background: #fff;
+    padding: 6px 30px;
+    border: 1px solid #ccc;
+    transition: 0.5s;
+}
+.button:hover{
+    color: #fff;
+    background: #333;
+}
+
+/* 컨트롤 버튼 서식 */
+/* &nbsp;는 빈칸이라는 뜻, 글자가 없으니 color로 주면 안되고
+bg로 줘야함
+*/
+.c_btn{/*flex 준 후에는 justify-content로 정렬하기*/
+    display: flex;
+    justify-content: center;
+}
+.c_btn > li{
+    background: #ccc;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin: 50px 10px;
+}
+
+.on{
+    background: #333 !important;
+}
+
+
+
+
+
+    /* 푸터서식 */
+footer{
+    background: #464545;
+}
+.f_top{
+    height: 60px;
+    background: #989898;
+}
+.f_nav{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;/*양쪽으로 배치되게 하기*/
+}
+.f_nav > ul{
+    display: flex;
+}
+.f_nav li{margin: 0 15px;}
+.f_nav a{
+    color: #fff;
+    line-height: 60px;
+}
+.f_nav dl{
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 60px;
+    color: #fff;
+}
+.f_nav dl dt{
+    font-weight: 500;
+}
+.f_nav dl dd{
+    padding-left: 30px;
+}
+.f_nav dl span{padding-left: 100px;}
+
+/* 푸터 하단영역 서식 */
+.f_bottom, address{
+    width: 1200px;
+    margin: 0 auto;
+}
+.f_bottom{
+    display: flex;
+    justify-content: space-around;
+    color: #cac8c8;
+    padding: 20px 0;
+}
+.f_bottom > dl{line-height: 40px;}
+.f_bottom dt{
+    font-size: 20px;
+}
+.f_bottom dd{
+    font-size: 18px;
+}
+dd.tel{
+    color: #fff;
+    font-size: 34px;
+    font-weight: bold;
+}
+.sns{
+    display: flex;
+    position: relative;top: 30px;/*원래있던 위치에서 30 만큼 내려옴*/
+    
+}
+.sns li{
+    line-height: 60px;
+    margin: 0 10px;
+}
+.sns li a{
+    font-size: 26px;
+    color: #fff;
+}
+.sns > li span{
+    display: none;
+}
+.f_bottom > select{
+    width: 200px;height: 40px;
+    position: relative;top: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+address{
+    width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #ccc;
+    font-style: normal;/*기울기 없애기*/
+    line-height: 160%;
+    display: flex;
+    
+}
+.a_info{
+    width: 70%;
+    margin-right: 100px;
+}
+.a_pay {
+    width: 30%;
+}
+.title01 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+}
+/* 메인영역 서식 시작 */
+main{}
+main .m_slide > h2{display: none;}
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
